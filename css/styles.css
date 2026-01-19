@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    grid-template-rows: repeat(10, 80px);
+    margin: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.agent {
+    background-color: lightblue;
+}
+/* Estilo para o agente KNN */
+.cell.agent-KNN {
+    background-color: blue;
+    border-radius: 50%;
+    transition: all .15s;
+}
+
+/* Estilo para o agente Naive Bayes */
+.cell.agent-NB {
+    background-color: green;
+    border-radius: 50%;
+    transition: all .15s;
+}
+
+/* Estilo para o agente Rede Neural */
+.cell.agent-NN {
+    background-color: red;
+    border-radius: 50%;
+    transition: all .15s;
+}
+
+.cell.agent-AD {
+    background-color: burlywood;
+    border-radius: 50%;
+    transition: all .15s;
+}
+
+.bomba {
+    background-color: lightcoral;
+}
+
+.mouse {
+    background-color: greenyellow;
+}
+
+.tesouro {
+    background-color: yellow;
+}
+
+#info {
+    margin-left: 20px;
+    text-align: left;
+}

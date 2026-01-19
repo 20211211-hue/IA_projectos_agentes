@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    grid-template-rows: repeat(10, 80px);
+    margin: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.agent {
+    background-color: lightblue;
+}
+
+.mouse {
+    background-color: lightcoral;
+}
+
+#info {
+    margin-left: 20px;
+    text-align: left;
+}
