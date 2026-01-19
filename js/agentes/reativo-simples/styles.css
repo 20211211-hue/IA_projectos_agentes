@@ -1,0 +1,96 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 70px);
+    grid-template-rows: repeat(10, 70px);
+    margin: 20px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+#moveButton {
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#moveButton:hover {
+    background-color: #45a049;
+}
+
+.agent {
+    background-color: lightblue;
+    box-shadow: 0 0 10px #007BFF;
+}
+
+.bomba {
+    background-color: lightcoral;
+}
+
+.tesouro {
+    background-color: gold;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+#info {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.firstScreen{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.btns{
+    display: block;
+}
+
+.btn{
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: large;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: #2f00ff;
+}
