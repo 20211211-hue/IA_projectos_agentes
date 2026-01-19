@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulação de Agentes Inteligentes</title>
+</head>
+<body>
+    <h1>Simulação de Agentes Inteligentes</h1>
+
+    <div class="firstScreen">
+        <div class="buttons">
+            <button class="btn">Abordagem A</button>
+            <button class="btn">Abordagem B</button>
+            <button class="btn">Abordagem C</button>
+        </div>
+    </div>
+
+    <h2>Definir Número de Agentes</h2>
+    <label for="numKNN">KNN:</label>
+    <input type="number" id="numKNN" min="1" value="3">
+
+    <label for="numNB">Naive Bayes:</label>
+    <input type="number" id="numNB" min="1" value="3">
+
+    <label for="numDT">Árvore de Decisão:</label>
+    <input type="number" id="numDT" min="1" value="3">
+
+    <button id="generateAgents">Gerar Agentes</button>
+    
+    <div id="container">
+        <div id="board" class="grid"></div>
+        <div id="info">
+            <input type="file" id="csvInput" /> 
+            <h2>Estatísticas</h2>
+            <p>Tempo decorrido: <span id="timeElapsed">0</span> segundos</p>
+            <p>Número de Bombas Encontradas:</p>
+            <ul id="bombsList"></ul>
+            <p>Número de Tesouros Coletados:</p>
+            <ul id="treasuresList"></ul>
+            <p>Células percorridas por cada agente:</p>
+            <ul id="pathsList"></ul>
+            <p>Passos Realizados: <span id="steps">0</span></p>
+            <p>Número de Sessões: <span id="session">0</span></p>
+            <p>Custo Atual: <span id="currentCost">0</span></p>
+            <p>Custo Adquirido: <span id="acquiredCost">0</span></p>
+            <button id="moveButton">Mover Agente</button>
+            <p id="status"></p>
+        </div>
+        
+
+    </div>
+
+    <h2>Estatísticas dos Agentes</h2>
+        <table id="statsTable">
+            <thead>
+                <tr>
+                    <th>Agente</th>
+                    <th>Passos</th>
+                    <th>Custo Total</th>
+                    <th>Bombas Encontradas</th>
+                    <th>Tesouros Coletados</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    <script src="js/Ambiente.js"></script>
+    <script src="js/Agente.js"></script>
+    <script src="js/KNN.js"></script>
+    <script src="js/NaiveBayes.js"></script>
+    <script src="js/DecisionTree.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>
